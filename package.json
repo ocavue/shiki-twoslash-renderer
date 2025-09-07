@@ -1,7 +1,7 @@
 {
   "name": "shiki-twoslash-renderer",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "packageManager": "pnpm@10.14.0",
   "description": "A Shiki renderer for Twoslash based on web components",
