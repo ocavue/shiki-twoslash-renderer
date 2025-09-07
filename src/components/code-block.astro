@@ -20,7 +20,7 @@ const transformers = twoslash
     ]
   : []
 
-const renderedCode = await codeToHtml(code, {
+const renderedCode = await codeToHtml(code.trim(), {
   lang,
   themes: {
     light: 'vitesse-light',

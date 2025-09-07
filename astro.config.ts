@@ -8,7 +8,7 @@ const config: unknown = defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  outDir: "build"
+  outDir: 'build',
 })
 
 export default config
