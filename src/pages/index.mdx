@@ -1,0 +1,91 @@
+---
+layout: ../layouts/layout.astro
+---
+
+import CodeBlock from '../components/code-block.astro'
+import demoCode from '../snippets/demo.ts?raw'
+import installCode from '../snippets/install.sh?raw'
+import serverSideCode from '../snippets/server-side.ts?raw'
+import clientSideCode from '../snippets/client-side.ts?raw'
+import typeInferenceCode from '../snippets/type-inference.ts?raw'
+import errorHighlightingCode from '../snippets/error-highlighting.ts?raw'
+import customConfigurationCode from '../snippets/custom-configuration.ts?raw'
+
+# Shiki Twoslash Renderer
+
+A lightweight web component renderer that enhances TypeScript code blocks with interactive hover tooltips, type information, and error diagnostics. Powered by [Shiki](https://shiki.style/) syntax highlighting and [TwoSlash](https://twoslash.netlify.app/) type analysis.
+
+## Demo
+
+Hover over the highlighted code elements to see TypeScript information:
+
+<CodeBlock 
+  code={demoCode}
+  lang="typescript"
+/>
+
+## Installation
+
+Install the required packages:
+
+<CodeBlock 
+  code={installCode}
+  lang="bash"
+/>
+
+## Usage
+
+### Server-side
+
+<CodeBlock 
+  code={serverSideCode}
+  lang="typescript"
+/>
+
+### Client-side
+
+Register the custom elements and import styles:
+
+<CodeBlock 
+  code={clientSideCode}
+  lang="typescript"
+/>
+
+## Examples
+
+### Type Inference
+
+<CodeBlock 
+  code={typeInferenceCode}
+  lang="typescript"
+/>
+
+### Error Highlighting
+
+<CodeBlock 
+  code={errorHighlightingCode}
+  lang="typescript"
+/>
+
+### Custom Configuration
+
+<CodeBlock 
+  code={customConfigurationCode}
+  lang="typescript"
+/>
+
+## API
+
+### `createRenderer(options?)`
+
+Creates a Twoslash renderer with custom web components.
+
+**Parameters:** `options?: RendererOptions` - Optional configuration extending `RendererRichOptions` from `@shikijs/twoslash`
+
+**Returns:** `TwoslashRenderer` - A renderer function compatible with `transformerTwoslash`
+
+### `register()`
+
+Registers the custom web components: `twoslash-root`, `twoslash-trigger`, and `twoslash-content`.
+
+Call this once in your client-side code.
