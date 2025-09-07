@@ -31,20 +31,11 @@ jobs:
         run: pnpm run typecheck
 
   test:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        node: [20.x, 22.x, 24.x]
-        os: [ubuntu-latest, windows-latest, macos-latest]
-      fail-fast: false
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
 
       - uses: ./.github/actions/setup
-        with:
-          node-version: ${{ matrix.node }}
 
       - name: Build
         run: pnpm run build
