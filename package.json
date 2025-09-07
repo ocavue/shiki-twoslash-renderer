@@ -1,59 +1,81 @@
 {
-  "name": "pkg-name",
+  "name": "shiki-twoslash-renderer",
   "type": "module",
-  "version": "0.0.0",
-  "packageManager": "pnpm@10.15.1",
-  "description": "TypeScript starter kit",
-  "author": "ocavue <ocavue@gmail.com>",
+  "version": "0.0.4",
+  "private": false,
+  "description": "A Shiki renderer for Twoslash based on web components",
+  "author": {
+    "name": "ocavue",
+    "email": "ocavue@gmail.com"
+  },
   "license": "MIT",
   "funding": "https://github.com/sponsors/ocavue",
-  "homepage": "https://github.com/ocavue/pkg-name#readme",
+  "homepage": "https://github.com/ocavue/shiki-twoslash-renderer#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ocavue/pkg-name.git"
+    "url": "https://github.com/ocavue/shiki-twoslash-renderer.git"
   },
-  "bugs": "https://github.com/ocavue/pkg-name/issues",
-  "keywords": [],
+  "bugs": "https://github.com/ocavue/shiki-twoslash-renderer/issues",
+  "keywords": [
+    "Shiki",
+    "Twoslash",
+    "TypeScript"
+  ],
   "sideEffects": false,
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.js"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
+    ".": "./src/index.ts",
+    "./elements": "./src/elements.ts",
+    "./style.css": "./src/style.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "lint": "eslint .",
     "fix": "eslint --fix . && prettier --write .",
     "prepublishOnly": "pnpm run build",
     "test": "vitest",
     "typecheck": "tsc -b"
   },
+  "dependencies": {
+    "@aria-ui/core": "^0.0.21",
+    "@aria-ui/tooltip": "^0.0.29",
+    "@shikijs/twoslash": "^3.12.2",
+    "@shikijs/types": "^3.12.2",
+    "@types/hast": "^3.0.4"
+  },
   "devDependencies": {
     "@ocavue/eslint-config": "^3.3.3",
-    "@ocavue/tsconfig": "^0.5.0",
-    "@types/node": "^20.19.10",
-    "eslint": "^9.35.0",
+    "@ocavue/tsconfig": "^0.3.7",
+    "@types/node": "^20.19.13",
     "prettier": "^3.6.2",
-    "tsup": "^8.5.0",
+    "shiki": "^3.12.2",
+    "tsdown": "^0.14.2",
     "typescript": "^5.9.2",
-    "vite": "^7.1.4",
     "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "default": "./dist/index.js"
+      },
+      "./elements": {
+        "types": "./dist/elements.d.ts",
+        "import": "./dist/elements.js",
+        "default": "./dist/elements.js"
+      },
+      "./style.css": {
+        "default": "./dist/style.css"
+      }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts"
   }
 }
