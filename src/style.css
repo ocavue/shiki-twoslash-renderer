@@ -100,8 +100,7 @@ twoslash-trigger {
 }
 
 .twoslash .twoslash-query-presisted .twoslash-popup-container {
-  z-index: 9;
-  /* transform: translateY(1.5em); */
+  display: flex;
 }
 
 .twoslash .twoslash-hover:hover .twoslash-popup-container,

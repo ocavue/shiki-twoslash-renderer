@@ -1,0 +1,70 @@
+---
+import { transformerTwoslash } from '@shikijs/twoslash'
+import { codeToHtml } from 'shiki'
+import { createRenderer } from '../index'
+
+interface Props {
+  code: string
+  lang?: string
+  title?: string
+  twoslash?: boolean
+}
+
+const { code, lang = 'typescript', title, twoslash = true } = Astro.props
+
+const transformers = twoslash
+  ? [
+      transformerTwoslash({
+        renderer: createRenderer(),
+      }),
+    ]
+  : []
+
+const renderedCode = await codeToHtml(code, {
+  lang,
+  themes: {
+    light: 'vitesse-light',
+    dark: 'vitesse-dark',
+  },
+  defaultColor: false,
+  transformers,
+})
+---
+
+<div
+  class="not-prose mb-8 overflow-hidden rounded-lg border border-black/10 dark:border-white/10"
+>
+  {
+    title && (
+      <div class="border-b border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 px-4 py-2 text-sm text-black/60 dark:text-white/60">
+        {title}
+      </div>
+    )
+  }
+  <div class="overflow-x-auto [&>pre]:p-4" set:html={renderedCode} />
+</div>
+
+<script>
+  import { register } from '../elements'
+  register()
+</script>
+
+<style is:global>
+  html:not(.dark) .shiki,
+  html:not(.dark) .shiki span {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+    font-style: var(--shiki-light-font-style);
+    font-weight: var(--shiki-light-font-weight);
+    text-decoration: var(--shiki-light-text-decoration);
+  }
+
+  html.dark .shiki,
+  html.dark .shiki span {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+    font-style: var(--shiki-dark-font-style);
+    font-weight: var(--shiki-dark-font-weight);
+    text-decoration: var(--shiki-dark-text-decoration);
+  }
+</style>
