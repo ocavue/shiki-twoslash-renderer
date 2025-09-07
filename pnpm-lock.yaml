@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@aria-ui/core':
-        specifier: ^0.0.21
-        version: 0.0.21
+        specifier: ^0.0.22
+        version: 0.0.22
       '@aria-ui/tooltip':
-        specifier: ^0.0.29
-        version: 0.0.29
+        specifier: ^0.0.30
+        version: 0.0.30
       '@shikijs/twoslash':
         specifier: ^3.12.2
         version: 3.12.2(typescript@5.9.2)
@@ -28,8 +28,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3(@types/estree@1.0.8)(@typescript-eslint/parser@8.42.0(eslint@9.35.0(jiti@2.5.1))(typescript@5.9.2))(@typescript-eslint/utils@8.42.0(eslint@9.35.0(jiti@2.5.1))(typescript@5.9.2))(eslint@9.35.0(jiti@2.5.1))(jsonc-eslint-parser@2.4.0)(typescript@5.9.2)
       '@ocavue/tsconfig':
-        specifier: ^0.3.7
-        version: 0.3.7
+        specifier: ^0.5.0
+        version: 0.5.0
       '@types/node':
         specifier: ^20.19.13
         version: 20.19.13
@@ -54,17 +54,17 @@ packages:
   '@altano/repository-tools@2.0.1':
     resolution: {integrity: sha512-YE/52CkFtb+YtHPgbWPai7oo5N9AKnMuP5LM+i2AG7G1H2jdYBCO1iDnkDE3dZ3C1MIgckaF+d5PNRulgt0bdw==}
 
-  '@aria-ui/core@0.0.21':
-    resolution: {integrity: sha512-b39+C2Ao7QP+bpvBQSFK5Uf/2f+htYo4KSS8BdnoJ/npvVNTXtcyhHPughZGUOHj1gKGvxi+2rdEhGus/UVsNw==}
+  '@aria-ui/core@0.0.22':
+    resolution: {integrity: sha512-N/UC2JJ8fA46WAc5TBNM9NZMcmQ3ghqDt1DNa7XdXHqHhDYkZ7Mn0Yn6KEciiIvlP+yuxLrPO/Q1oB4CNV21kg==}
 
-  '@aria-ui/overlay@0.0.24':
-    resolution: {integrity: sha512-kXIzQ7DtRtlSbN1tbT504M1J5HzF0U+ZvEv/f2ONiY3yu7BlZeMKJPF4MXcvl3vQhB/joFyoqXb47OyJvHVkxA==}
+  '@aria-ui/overlay@0.0.25':
+    resolution: {integrity: sha512-YpOFpB1KNQaGLgRsnN5BcY64A+akHOqlLhH/ft7YU/l7E/9Sm0yscriiBvEi+vVwqYUOveNuh5vDVVmWeRjLpQ==}
 
-  '@aria-ui/presence@0.0.19':
-    resolution: {integrity: sha512-YUWo9JmYFhv20XAto85t3N7YDO+f5VoBiDbT77iurOU2ktyFZ1NLrMDh6S6rpDS+k106h0mA5iItpiYHx4kr6Q==}
+  '@aria-ui/presence@0.0.20':
+    resolution: {integrity: sha512-K/n60HLCGG0XX+sAEJ7aOScevXrfDet7+gxt+QXlELxxjrlpP0sZq/iS6KCdr6n7piaW6zfY7EtKxOriWUv8tw==}
 
-  '@aria-ui/tooltip@0.0.29':
-    resolution: {integrity: sha512-U1h430e9c9frIHB/3BPUJNpu0PUeY3La99QQPA53Rn2tC+Up9B0MS9arwROOnkpEKfdEzCczlHTyxnLx9wfGdA==}
+  '@aria-ui/tooltip@0.0.30':
+    resolution: {integrity: sha512-XYctHrJOSRNW2iQc1IHkozlK2H6edX+uD/p1Oo5yHNMA28mFrxKUOJEiA297jAvlLwASKTaAT+40cOTZ2bTyTQ==}
 
   '@ariatype/aria-attributes-drag-and-drop@1.0.2':
     resolution: {integrity: sha512-JbbKaKkYMN/zc//irXYb6QFIMm+A4tpwgs6x4BrNtqU/Jeq2vk4i3LhnHBB1SaMfihGtcH8/Sj++o4jaIBXyCw==}
@@ -507,8 +507,8 @@ packages:
   '@ocavue/eslint-config@3.3.3':
     resolution: {integrity: sha512-QNckP2kp33sT12pWNnpbmQkuEShjqcPAknW0u0ZD0fMTj5/je9znpLe85O0rFdD7qTeoOCEgiumJ8PuQ9gsGLg==}
 
-  '@ocavue/tsconfig@0.3.7':
-    resolution: {integrity: sha512-eHvgeLxI4jxoTpp63uM5+Vt44ioQRUxb2wwEQcdBFnd/KGNvf4dRmDfGtghhFmTuwpXbAD12wMSIuTlwauExww==}
+  '@ocavue/tsconfig@0.5.0':
+    resolution: {integrity: sha512-j7ys2K6hnUKTJNQL48ZrCxB64Arml48MBcdGt/EDQXvP8k/s1GvNUeBxUx7+hKXojOQ1L9E3FkpXwTg3DDjduA==}
 
   '@oxc-project/runtime@0.82.3':
     resolution: {integrity: sha512-LNh5GlJvYHAnMurO+EyA8jJwN1rki7l3PSHuosDh2I7h00T6/u9rCkUjg/SvPmT1CZzvhuW0y+gf7jcqUy/Usg==}
@@ -2763,7 +2763,7 @@ snapshots:
 
   '@altano/repository-tools@2.0.1': {}
 
-  '@aria-ui/core@0.0.21':
+  '@aria-ui/core@0.0.22':
     dependencies:
       '@ariatype/aria-attributes': 1.0.2
       '@ariatype/aria-roles': 1.0.2
@@ -2773,23 +2773,23 @@ snapshots:
       just-map-values: 3.2.0
       server-dom-shim: 1.0.2
 
-  '@aria-ui/overlay@0.0.24':
+  '@aria-ui/overlay@0.0.25':
     dependencies:
-      '@aria-ui/core': 0.0.21
+      '@aria-ui/core': 0.0.22
       '@floating-ui/dom': 1.7.4
       '@floating-ui/utils': 0.2.10
       '@zag-js/dom-query': 1.22.1
 
-  '@aria-ui/presence@0.0.19':
+  '@aria-ui/presence@0.0.20':
     dependencies:
-      '@aria-ui/core': 0.0.21
+      '@aria-ui/core': 0.0.22
       '@zag-js/dom-query': 1.22.1
 
-  '@aria-ui/tooltip@0.0.29':
+  '@aria-ui/tooltip@0.0.30':
     dependencies:
-      '@aria-ui/core': 0.0.21
-      '@aria-ui/overlay': 0.0.24
-      '@aria-ui/presence': 0.0.19
+      '@aria-ui/core': 0.0.22
+      '@aria-ui/overlay': 0.0.25
+      '@aria-ui/presence': 0.0.20
       nanoid: 5.1.5
 
   '@ariatype/aria-attributes-drag-and-drop@1.0.2': {}
@@ -3271,7 +3271,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@ocavue/tsconfig@0.3.7': {}
+  '@ocavue/tsconfig@0.5.0': {}
 
   '@oxc-project/runtime@0.82.3': {}
 
