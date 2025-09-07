@@ -41,7 +41,7 @@ const renderedCode = await codeToHtml(code.trim(), {
       </div>
     )
   }
-  <div class="overflow-x-auto [&>pre]:p-4" set:html={renderedCode} />
+  <div class="overflow-x-auto [&>pre]:p-4 [&>pre]:text-sm" set:html={renderedCode} />
 </div>
 
 <script>

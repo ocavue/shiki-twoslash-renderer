@@ -1,6 +1,8 @@
 # shiki-twoslash-renderer
 
-A lightweight web component renderer that enhances TypeScript code blocks with interactive hover tooltips, type information, and error diagnostics. Powered by [Shiki](https://shiki.style/) syntax highlighting and [TwoSlash](https://twoslash.netlify.app/) type analysis.
+A lightweight web component renderer that enhances TypeScript code blocks with interactive hover tooltips, type information, and error diagnostics.
+
+Powered by [Shiki](https://shiki.style/) syntax highlighting and [TwoSlash](https://twoslash.netlify.app/) type analysis.
 
 **[Online Demo](https://shiki-twoslash-renderer.vercel.app/)**
 
