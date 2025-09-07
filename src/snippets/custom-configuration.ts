@@ -6,5 +6,5 @@ const renderer = createRenderer({
 })
 
 transformerTwoslash({
-  renderer
+  renderer,
 })
