@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.5",
   "private": false,
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.1",
   "description": "A Shiki renderer for Twoslash based on web components",
   "author": {
     "name": "ocavue",
@@ -43,16 +43,17 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@aria-ui/core": "^0.0.21",
-    "@aria-ui/tooltip": "^0.0.29",
+    "@aria-ui/core": "^0.0.22",
+    "@aria-ui/tooltip": "^0.0.30",
     "@shikijs/twoslash": "^3.12.2",
     "@shikijs/types": "^3.12.2",
     "@types/hast": "^3.0.4"
   },
   "devDependencies": {
     "@ocavue/eslint-config": "^3.3.3",
-    "@ocavue/tsconfig": "^0.3.7",
+    "@ocavue/tsconfig": "^0.5.0",
     "@types/node": "^20.19.13",
+    "eslint": "^9.35.0",
     "prettier": "^3.6.2",
     "shiki": "^3.12.2",
     "tsdown": "^0.14.2",
