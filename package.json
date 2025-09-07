@@ -34,7 +34,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown",
+    "build": "tsc -b && tsdown",
     "dev": "tsdown --watch",
     "lint": "eslint .",
     "fix": "eslint --fix . && prettier --write .",
