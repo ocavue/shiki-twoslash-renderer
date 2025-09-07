@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <!-- Gradient definition -->
+    <linearGradient id="tsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/> <!-- teal -->
+      <stop offset="100%" stop-color="#22c55e"/> <!-- green -->
+    </linearGradient>
+  </defs>
+
+  <!-- Thinner sharp code brackets -->
+  <path d="M7 6 L2 11 L2 21 L7 26" stroke="url(#tsGradient)" stroke-width="2" fill="none" stroke-linejoin="miter"/>
+  <path d="M25 6 L30 11 L30 21 L25 26" stroke="url(#tsGradient)" stroke-width="2" fill="none" stroke-linejoin="miter"/>
+
+  <!-- TypeScript "TS" in the center with gradient fill -->
+  <text x="16" y="21" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif"
+        font-size="12" font-weight="bold" fill="url(#tsGradient)">TS</text>
+</svg>
