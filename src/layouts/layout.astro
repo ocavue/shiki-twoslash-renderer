@@ -2,7 +2,7 @@
 import '../tailwind.css'
 import '../style.css'
 import { ThemeScript } from 'astro-theme-toggle'
-import { ViewTransitions } from 'astro:transitions'
+import { ClientRouter } from 'astro:transitions'
 import { Toggle } from 'astro-theme-toggle'
 
 interface Props {
@@ -34,7 +34,7 @@ const {
         scroll-behavior: smooth;
       }
     </style>
-    <ViewTransitions />
+    <ClientRouter />
     <ThemeScript />
   </head>
 
