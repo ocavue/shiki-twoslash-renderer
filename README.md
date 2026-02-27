@@ -34,6 +34,7 @@ You need to register the custom elements and import the styles in your browser-s
 
 ```ts
 import 'shiki-twoslash-renderer/style.css'
+
 import { register } from 'shiki-twoslash-renderer/elements'
 
 register()
