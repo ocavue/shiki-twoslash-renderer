@@ -50,7 +50,7 @@ describe('shiki-twoslash-renderer', () => {
                   <span style="color:#CB7676">let 
                   </span>
                   <span style="color:#BD976A">
-                      <twoslash-root class="twoslash-hover twoslash-query-presisted">
+                      <twoslash-root class="twoslash-hover twoslash-query-persisted">
                           <twoslash-trigger>foo
                           </twoslash-trigger>
                           <twoslash-content class="twoslash-popup-container">
