@@ -47,8 +47,8 @@
   "dependencies": {
     "@aria-ui/core": "^0.0.22",
     "@aria-ui/tooltip": "^0.0.30",
-    "@shikijs/twoslash": "^3.12.2",
-    "@shikijs/types": "^3.12.2",
+    "@shikijs/twoslash": "^4.0.0",
+    "@shikijs/types": "^4.0.0",
     "@types/hast": "^3.0.4"
   },
   "devDependencies": {
@@ -62,7 +62,7 @@
     "astro-theme-toggle": "^0.6.1",
     "eslint": "^10.0.2",
     "prettier": "^3.8.1",
-    "shiki": "^3.12.2",
+    "shiki": "^4.0.0",
     "tailwindcss": "^4.1.13",
     "tsdown": "^0.20.0",
     "typescript": "^5.9.2",
