@@ -64,7 +64,7 @@
     "prettier": "^3.8.1",
     "shiki": "^3.12.2",
     "tailwindcss": "^4.1.13",
-    "tsdown": "^0.14.2",
+    "tsdown": "^0.20.0",
     "typescript": "^5.9.2",
     "vite": "^6.3.5",
     "vitest": "^3.2.4"
