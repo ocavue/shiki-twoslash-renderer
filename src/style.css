@@ -10,19 +10,31 @@ twoslash-positioner {
 }
 
 twoslash-popup {
+  transition-duration: 5s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-behavior: allow-discrete;
+}
+
+twoslash-popup:not([data-state]) {
   display: none;
-  opacity: 0;
-  scale: 0.95;
-  transition:
-    opacity 0.15s ease,
-    scale 0.15s ease,
-    display 0.15s ease allow-discrete;
+}
+twoslash-popup[data-state] {
+  display: flex;
 }
 twoslash-popup[data-state='open'] {
-  display: flex;
   opacity: 1;
   scale: 1;
+  @starting-style {
+    opacity: 0;
+    scale: 0.3;
+  }
 }
+twoslash-popup[data-state='closed'] {
+  opacity: 0;
+  scale: 0.3;
+}
+
 twoslash-trigger {
   display: inline-block;
 }
