@@ -1,7 +1,7 @@
 @import './theme.css';
 
 twoslash-root {
-  display: contents;
+  display: inline-block;
 }
 
 twoslash-positioner:not(:defined) {
