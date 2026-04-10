@@ -7,7 +7,6 @@ import {
   TooltipTriggerElement,
 } from '@aria-ui/elements/tooltip'
 
-
 class TwoslashPositionerElement extends defineCustomElement(
   setupTooltipPositioner,
   {

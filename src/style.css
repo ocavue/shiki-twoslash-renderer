@@ -9,13 +9,6 @@ twoslash-positioner {
   background-color: transparent;
 }
 
-twoslash-popup {
-  transition-duration: 5s;
-  transition-property: all;
-  transition-timing-function: ease-in;
-  transition-behavior: allow-discrete;
-}
-
 twoslash-popup:not([data-state]) {
   display: none;
 }
@@ -112,20 +105,32 @@ twoslash-trigger {
 }
 
 .twoslash .twoslash-popup-container {
-  /* position: absolute; */
-  opacity: 0;
-  /* display: inline-flex; */
   flex-direction: column;
   background: var(--twoslash-popup-bg);
   color: var(--twoslash-popup-color);
   border: 1px solid var(--twoslash-border-color);
-  transition: opacity 0.3s;
   border-radius: 4px;
   pointer-events: none;
-  z-index: 10;
+  z-index: 2147483647;
   user-select: none;
   text-align: left;
   box-shadow: var(--twoslash-popup-shadow);
+
+  transition-property: opacity scale;
+  transition-duration: 0.15s;
+  transition-behavior: allow-discrete;
+
+  opacity: 1;
+  scale: 1;
+  @starting-style {
+    opacity: 0;
+    scale: 0.95;
+  }
+}
+
+.twoslash .twoslash-popup-container[data-state='closed'] {
+  opacity: 0;
+  scale: 0.95;
 }
 
 .twoslash .twoslash-query-presisted .twoslash-popup-container {
