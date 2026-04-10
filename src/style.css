@@ -1,11 +1,25 @@
 @import './theme.css';
 
-twoslash-content {
+twoslash-root {
+  display: contents;
+}
+
+twoslash-positioner:not(:defined) {
+  display: none;
+} 
+
+twoslash-positioner {
+  display: block;
+  background-color: transparent;
+}
+
+twoslash-popup:not(:defined) {
   display: none;
 }
-twoslash-content[data-mounted] {
+twoslash-popup[data-state] {
   display: flex;
 }
+
 twoslash-trigger {
   display: inline-block;
 }
@@ -83,24 +97,36 @@ twoslash-trigger {
 }
 
 .twoslash .twoslash-popup-container {
-  /* position: absolute; */
-  opacity: 0;
-  /* display: inline-flex; */
   flex-direction: column;
   background: var(--twoslash-popup-bg);
   color: var(--twoslash-popup-color);
   border: 1px solid var(--twoslash-border-color);
-  transition: opacity 0.3s;
   border-radius: 4px;
   pointer-events: none;
-  z-index: 10;
+  z-index: 2147483647;
   user-select: none;
   text-align: left;
   box-shadow: var(--twoslash-popup-shadow);
+  transform-origin: top center;
+
+  transition-property: opacity, scale;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-behavior: allow-discrete;
+
+  opacity: 1;
+  scale: 1;
+  @starting-style {
+    opacity: 0;
+    scale: 0.95;
+  }
 }
 
-.twoslash .twoslash-query-presisted .twoslash-popup-container {
-  display: flex;
+.twoslash .twoslash-popup-container[data-state='closed'] {
+  opacity: 0;
+  scale: 0.95;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
 }
 
 .twoslash .twoslash-hover:hover .twoslash-popup-container,
