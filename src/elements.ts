@@ -25,32 +25,23 @@ class TwoslashPositionerElement extends defineCustomElement(
   },
 ) {}
 
-class TwoslashRootElement extends defineCustomElement(
-  setupTooltipRoot,
-  {
-    ...TooltipRootPropsDeclaration
-  }
-) {} 
+class TwoslashRootElement extends defineCustomElement(setupTooltipRoot, {
+  ...TooltipRootPropsDeclaration,
+}) {}
 
-class TwoslashTriggerElement extends defineCustomElement(
-  setupTooltipTrigger,
-  {
-    ...TooltipTriggerPropsDeclaration,
-    openDelay: {
-      ...TooltipTriggerPropsDeclaration.openDelay,
-      default: 100,
-    },
-  }
-) {}
+class TwoslashTriggerElement extends defineCustomElement(setupTooltipTrigger, {
+  ...TooltipTriggerPropsDeclaration,
+  openDelay: {
+    ...TooltipTriggerPropsDeclaration.openDelay,
+    default: 100,
+  },
+}) {}
 
-class TwoslashPopupElement extends defineCustomElement(
-  setupTooltipPopup,
-  {
-    ...TooltipPopupPropsDeclaration
-  }
-) {}
+class TwoslashPopupElement extends defineCustomElement(setupTooltipPopup, {
+  ...TooltipPopupPropsDeclaration,
+}) {}
 
-export function register(): void  {
+export function register(): void {
   registerCustomElement('twoslash-positioner', TwoslashPositionerElement)
   registerCustomElement('twoslash-popup', TwoslashPopupElement)
   registerCustomElement('twoslash-root', TwoslashRootElement)
