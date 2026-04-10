@@ -4,11 +4,24 @@ twoslash-root {
   display: contents;
 }
 
+twoslash-positioner {
+  display: block;
+  background-color: transparent;
+}
+
 twoslash-popup {
   display: none;
+  opacity: 0;
+  scale: 0.95;
+  transition:
+    opacity 0.15s ease,
+    scale 0.15s ease,
+    display 0.15s ease allow-discrete;
 }
 twoslash-popup[data-state='open'] {
   display: flex;
+  opacity: 1;
+  scale: 1;
 }
 twoslash-trigger {
   display: inline-block;
