@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/ocavue/shiki-twoslash-renderer/compare/v0.3.0...v0.3.1) (2026-04-10)
+
+
+### Bug Fixes
+
+* fix text decoration styles ([#28](https://github.com/ocavue/shiki-twoslash-renderer/issues/28)) ([b5c4daf](https://github.com/ocavue/shiki-twoslash-renderer/commit/b5c4daf6e595427d4e076851e27945ba25a88cac))
+* update dependencies ([#26](https://github.com/ocavue/shiki-twoslash-renderer/issues/26)) ([9581d3b](https://github.com/ocavue/shiki-twoslash-renderer/commit/9581d3b540f89fa875cf195ceaf5f40cb6794a29))
+
 ## [0.3.0](https://github.com/ocavue/shiki-twoslash-renderer/compare/v0.2.1...v0.3.0) (2026-04-10)
 
 
