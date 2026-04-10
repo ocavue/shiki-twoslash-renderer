@@ -11,15 +11,15 @@ export function createRenderer(
     ...options,
     hast: {
       hoverToken: { tagName: 'twoslash-root' },
-      hoverPopup: { tagName: 'twoslash-content' },
+      hoverPopup: { tagName: 'twoslash-popup' },
       hoverCompose: compose,
 
       queryToken: { tagName: 'twoslash-root' },
-      queryPopup: { tagName: 'twoslash-content' },
+      queryPopup: { tagName: 'twoslash-popup' },
       queryCompose: compose,
 
       errorToken: { tagName: 'twoslash-root' },
-      errorPopup: { tagName: 'twoslash-content' },
+      errorPopup: { tagName: 'twoslash-popup' },
       errorCompose: compose,
     },
   })
@@ -33,6 +33,11 @@ function compose(parts: { token: Element | Text; popup: Element }): Element[] {
       properties: {},
       children: [parts.token],
     },
-    parts.popup,
+    {
+      type: 'element',
+      tagName: 'twoslash-positioner',
+      properties: {},
+      children: [parts.popup],
+    },
   ]
 }

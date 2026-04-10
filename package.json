@@ -45,8 +45,8 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@aria-ui/core": "^0.0.22",
-    "@aria-ui/tooltip": "^0.0.30",
+    "@aria-ui/core": "^0.1.0",
+    "@aria-ui/elements": "^0.1.0",
     "@shikijs/twoslash": "^4.0.0",
     "@shikijs/types": "^4.0.0",
     "@types/hast": "^3.0.4"

@@ -39,24 +39,26 @@ describe('shiki-twoslash-renderer', () => {
                 <twoslash-trigger>
                   foo
                 </twoslash-trigger>
-                <twoslash-content class="twoslash-popup-container">
-                  <div class="twoslash-popup-arrow">
-                  </div>
-                  <code class="twoslash-popup-code">
-                    <span style="color:#CB7676">
-                      let
-                    </span>
-                    <span style="color:#BD976A">
-                      foo
-                    </span>
-                    <span style="color:#666666">
-                      :
-                    </span>
-                    <span style="color:#5DA994">
-                      number
-                    </span>
-                  </code>
-                </twoslash-content>
+                <twoslash-positioner>
+                  <twoslash-popup class="twoslash-popup-container">
+                    <div class="twoslash-popup-arrow">
+                    </div>
+                    <code class="twoslash-popup-code">
+                      <span style="color:#CB7676">
+                        let
+                      </span>
+                      <span style="color:#BD976A">
+                        foo
+                      </span>
+                      <span style="color:#666666">
+                        :
+                      </span>
+                      <span style="color:#5DA994">
+                        number
+                      </span>
+                    </code>
+                  </twoslash-popup>
+                </twoslash-positioner>
               </twoslash-root>
             </span>
             <span style="color:#666666">

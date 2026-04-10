@@ -1,9 +1,13 @@
 @import './theme.css';
 
-twoslash-content {
+twoslash-root {
+  display: contents;
+}
+
+twoslash-popup {
   display: none;
 }
-twoslash-content[data-mounted] {
+twoslash-popup[data-state='open'] {
   display: flex;
 }
 twoslash-trigger {
