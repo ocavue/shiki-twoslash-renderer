@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/ocavue/shiki-twoslash-renderer/compare/v0.3.1...v0.3.2) (2026-04-10)
+
+
+### Bug Fixes
+
+* update error token styles ([#31](https://github.com/ocavue/shiki-twoslash-renderer/issues/31)) ([938c12d](https://github.com/ocavue/shiki-twoslash-renderer/commit/938c12d91a88c689d20d6c297e7ae2d3760c4cb1))
+
 ## [0.3.1](https://github.com/ocavue/shiki-twoslash-renderer/compare/v0.3.0...v0.3.1) (2026-04-10)
 
 
