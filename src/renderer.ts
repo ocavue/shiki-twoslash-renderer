@@ -18,7 +18,12 @@ export function createRenderer(
       queryPopup: { tagName: 'twoslash-popup' },
       queryCompose: compose,
 
-      errorToken: { tagName: 'twoslash-root' },
+      errorToken: { tagName: 'twoslash-root', children: (
+        ...args 
+      ) => {
+        console.log("args",args)
+        return args[0]
+      } },
       errorPopup: { tagName: 'twoslash-popup' },
       errorCompose: compose,
     },
