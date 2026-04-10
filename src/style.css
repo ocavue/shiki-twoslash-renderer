@@ -15,18 +15,6 @@ twoslash-popup:not([data-state]) {
 twoslash-popup[data-state] {
   display: flex;
 }
-twoslash-popup[data-state='open'] {
-  opacity: 1;
-  scale: 1;
-  @starting-style {
-    opacity: 0;
-    scale: 0.3;
-  }
-}
-twoslash-popup[data-state='closed'] {
-  opacity: 0;
-  scale: 0.3;
-}
 
 twoslash-trigger {
   display: inline-block;
