@@ -4,12 +4,16 @@ twoslash-root {
   display: contents;
 }
 
+twoslash-positioner:not(:defined) {
+  display: none;
+} 
+
 twoslash-positioner {
   display: block;
   background-color: transparent;
 }
 
-twoslash-popup:not([data-state]) {
+twoslash-popup:not(:defined) {
   display: none;
 }
 twoslash-popup[data-state] {
@@ -123,10 +127,6 @@ twoslash-trigger {
   scale: 0.95;
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
-}
-
-.twoslash .twoslash-query-presisted .twoslash-popup-container {
-  display: flex;
 }
 
 .twoslash .twoslash-hover:hover .twoslash-popup-container,
