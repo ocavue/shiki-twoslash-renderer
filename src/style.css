@@ -103,9 +103,11 @@ twoslash-trigger {
   user-select: none;
   text-align: left;
   box-shadow: var(--twoslash-popup-shadow);
+  transform-origin: top center;
 
-  transition-property: opacity scale;
-  transition-duration: 0.15s;
+  transition-property: opacity, scale;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   transition-behavior: allow-discrete;
 
   opacity: 1;
@@ -119,6 +121,8 @@ twoslash-trigger {
 .twoslash .twoslash-popup-container[data-state='closed'] {
   opacity: 0;
   scale: 0.95;
+  transition-duration: 4s;
+  transition-timing-function: ease-in;
 }
 
 .twoslash .twoslash-query-presisted .twoslash-popup-container {
