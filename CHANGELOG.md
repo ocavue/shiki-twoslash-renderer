@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/ocavue/shiki-twoslash-renderer/compare/v0.2.1...v0.3.0) (2026-04-10)
+
+
+### Features
+
+* split twoslash-content into twoslash-positioner and twoslash-popup ([#23](https://github.com/ocavue/shiki-twoslash-renderer/issues/23)) ([946f9c9](https://github.com/ocavue/shiki-twoslash-renderer/commit/946f9c91e00c1624794833b5af0e326b4f19f115))
+
 ## [0.2.1](https://github.com/ocavue/shiki-twoslash-renderer/compare/v0.2.0...v0.2.1) (2026-02-27)
 
 
