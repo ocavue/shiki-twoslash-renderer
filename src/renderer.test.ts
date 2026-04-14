@@ -75,4 +75,23 @@ describe('shiki-twoslash-renderer', () => {
       "
     `)
   })
+
+  it('should render side-effect-only imports without noUncheckedSideEffectImports errors', async () => {
+    await expect(
+      codeToHtml(`import 'shiki-twoslash-renderer/style.css';`, {
+        lang: 'ts',
+        theme: 'vitesse-dark',
+        transformers: [
+          transformerTwoslash({
+            renderer: createRenderer(),
+            twoslashOptions: {
+              compilerOptions: {
+                noUncheckedSideEffectImports: false,
+              },
+            },
+          }),
+        ],
+      }),
+    ).resolves.toContain('shiki-twoslash-renderer/style.css')
+  })
 })
