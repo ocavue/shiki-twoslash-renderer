@@ -16,6 +16,11 @@ const transformers = twoslash
   ? [
       transformerTwoslash({
         renderer: createRenderer(),
+        twoslashOptions: {
+          compilerOptions: {
+            noUncheckedSideEffectImports: false,
+          },
+        },
       }),
     ]
   : []
