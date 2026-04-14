@@ -10,7 +10,30 @@ let foo = 1
 //   ^?
 `.trim()
 
+const sideEffectImportSource = `
+import 'shiki-twoslash-renderer/style.css'
+`.trim()
+
 describe('shiki-twoslash-renderer', () => {
+  it('should render side-effect-only imports without noUncheckedSideEffectImports errors', async () => {
+    await expect(
+      codeToHtml(sideEffectImportSource, {
+        lang: 'ts',
+        theme: 'vitesse-dark',
+        transformers: [
+          transformerTwoslash({
+            renderer: createRenderer(),
+            twoslashOptions: {
+              compilerOptions: {
+                noUncheckedSideEffectImports: false,
+              },
+            },
+          }),
+        ],
+      }),
+    ).resolves.toContain('shiki-twoslash-renderer/style.css')
+  })
+
   it('should render', async () => {
     const html = await codeToHtml(source, {
       lang: 'ts',
