@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@aria-ui/core':
-        specifier: ^0.1.1
-        version: 0.1.3
+        specifier: ^0.2.0
+        version: 0.2.0
       '@aria-ui/elements':
-        specifier: ^0.1.4
-        version: 0.1.7
+        specifier: ^0.1.8
+        version: 0.1.8
       '@shikijs/twoslash':
         specifier: ^4.0.2
         version: 4.0.2(typescript@6.0.2)
@@ -23,6 +23,9 @@ importers:
       '@types/hast':
         specifier: ^3.0.4
         version: 3.0.4
+      twoslash:
+        specifier: ^0.3.7
+        version: 0.3.7(typescript@6.0.2)
     devDependencies:
       '@astrojs/mdx':
         specifier: ^5.0.3
@@ -84,14 +87,14 @@ packages:
   '@altano/repository-tools@2.0.1':
     resolution: {integrity: sha512-YE/52CkFtb+YtHPgbWPai7oo5N9AKnMuP5LM+i2AG7G1H2jdYBCO1iDnkDE3dZ3C1MIgckaF+d5PNRulgt0bdw==}
 
-  '@aria-ui/core@0.1.3':
-    resolution: {integrity: sha512-nowT7a/ZpZRp5yEhzM1Vr2hEalB2Rd6H5VzwuuQYnQ2AXSkrdwWL+xEBCqWZ/DnG/U6EaBD325DVmZlnZa/74w==}
+  '@aria-ui/core@0.2.0':
+    resolution: {integrity: sha512-TjgmdWBk1PCV3a0xco0ivcrKnyblCq49pxl9LwJRUsy+8UMBIBHQNmvAlLdaaJw19ulUKgeLzbzBhfcYhnxLeQ==}
 
-  '@aria-ui/elements@0.1.7':
-    resolution: {integrity: sha512-AL5XYyuJyW2hJrx9vYWmd3vAdCNrJImHi2+KRtkPSxct9GJMIdYTDiQ/yQPpEdB+sk05sH4k+zfHnWqA5NsT8g==}
+  '@aria-ui/elements@0.1.8':
+    resolution: {integrity: sha512-CGef/voJ16La7wpTsjFdV/RgK5UeTLofvKM8hQtJKKlJxdjvRAMq02MQEZbeDNGSlkiea4WoYbax5wmXnOdI3Q==}
 
-  '@aria-ui/utils@0.1.4':
-    resolution: {integrity: sha512-E6vLvlnFZe82rIFtlllWukvAQ8hklpMbV1fBN6aOqd/82Mudl2X1eSL5BtUDJtID0FCqtStfwWtglpHAwHHx5A==}
+  '@aria-ui/utils@0.1.5':
+    resolution: {integrity: sha512-cgKotjkyeVV1dlTa3Ms6PYc6UURsCSdewlTj0gVjCSCDZrGxZSfe/rYCv6vxagdDTTtsH1KNpDuCU6bO4dlzIw==}
 
   '@astrojs/compiler@3.0.1':
     resolution: {integrity: sha512-z97oYbdebO5aoWzuJ/8q5hLK232+17KcLZ7cJ8BCWk6+qNzVxn/gftC0KzMBUTD8WAaBkPpNSQK6PXLnNrZ0CA==}
@@ -3205,24 +3208,24 @@ snapshots:
 
   '@altano/repository-tools@2.0.1': {}
 
-  '@aria-ui/core@0.1.3':
+  '@aria-ui/core@0.2.0':
     dependencies:
       '@ocavue/utils': 1.6.0
       '@zag-js/dom-query': 1.40.0
       alien-signals: 3.1.2
       server-dom-shim: 1.1.0
 
-  '@aria-ui/elements@0.1.7':
+  '@aria-ui/elements@0.1.8':
     dependencies:
-      '@aria-ui/core': 0.1.3
-      '@aria-ui/utils': 0.1.4
+      '@aria-ui/core': 0.2.0
+      '@aria-ui/utils': 0.1.5
       '@floating-ui/dom': 1.7.6
       '@zag-js/dismissable': 1.40.0
       '@zag-js/dom-query': 1.40.0
 
-  '@aria-ui/utils@0.1.4':
+  '@aria-ui/utils@0.1.5':
     dependencies:
-      '@aria-ui/core': 0.1.3
+      '@aria-ui/core': 0.2.0
       '@zag-js/dom-query': 1.40.0
 
   '@astrojs/compiler@3.0.1': {}
