@@ -10,9 +10,7 @@ let foo = 1
 //   ^?
 `.trim()
 
-
 describe('shiki-twoslash-renderer', () => {
-  
   it('should render', async () => {
     const html = await codeToHtml(source, {
       lang: 'ts',
@@ -96,5 +94,4 @@ describe('shiki-twoslash-renderer', () => {
       }),
     ).resolves.toContain('shiki-twoslash-renderer/style.css')
   })
-
 })
