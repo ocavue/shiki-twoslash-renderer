@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@aria-ui/core": "^0.1.0",
-    "@aria-ui/elements": "^0.1.1",
+    "@aria-ui/elements": "^0.1.2",
     "@shikijs/twoslash": "^4.0.2",
     "@shikijs/types": "^4.0.2",
     "@types/hast": "^3.0.4"
@@ -67,7 +67,7 @@
     "shiki": "^4.0.2",
     "tailwindcss": "^4.2.2",
     "tsdown": "^0.21.7",
-    "typescript": "^6.0.2",
+    "typescript": "^6.0.1",
     "vite": "^7.3.2",
     "vitest": "^4.1.4"
   },
