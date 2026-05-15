@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^5.0.6",
-    "@ocavue/eslint-config": "^4.5.7",
+    "@ocavue/eslint-config": "^4.0.0",
     "@ocavue/tsconfig": "^0.7.1",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
@@ -63,7 +63,7 @@
     "astro": "^6.3.3",
     "astro-theme-toggle": "^0.8.1",
     "diffable-html-snapshot": "^0.2.0",
-    "eslint": "^10.3.0",
+    "eslint": "^10.0.0",
     "prettier": "^3.8.3",
     "shiki": "^4.0.2",
     "tailwindcss": "^4.3.0",
