@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.3.5",
   "private": false,
-  "packageManager": "pnpm@11.1.2",
+  "packageManager": "pnpm@11.6.0",
   "description": "A Shiki renderer for Twoslash based on web components",
   "author": {
     "name": "ocavue",
@@ -54,23 +54,23 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^5.0.6",
-    "@ocavue/eslint-config": "^4.5.8",
+    "@ocavue/eslint-config": "^4.6.0",
     "@ocavue/tsconfig": "^0.7.1",
-    "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.3.0",
-    "@tsdown/css": "^0.22.0",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.1",
+    "@tsdown/css": "^0.22.2",
     "@types/node": "^22.19.13",
-    "astro": "^6.3.7",
+    "astro": "^6.4.6",
     "astro-theme-toggle": "^0.8.1",
     "diffable-html-snapshot": "^0.2.0",
-    "eslint": "^10.4.0",
-    "prettier": "^3.8.3",
+    "eslint": "^10.5.0",
+    "prettier": "^3.8.4",
     "shiki": "^4.1.0",
-    "tailwindcss": "^4.3.0",
-    "tsdown": "^0.22.0",
+    "tailwindcss": "^4.3.1",
+    "tsdown": "^0.22.2",
     "typescript": "^6.0.3",
-    "vite": "^7.3.3",
-    "vitest": "^4.1.6"
+    "vite": "^7.3.5",
+    "vitest": "^4.1.8"
   },
   "publishConfig": {
     "exports": {
