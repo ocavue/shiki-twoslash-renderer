@@ -53,14 +53,14 @@
     "twoslash": "^0.3.8"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^5.0.6",
+    "@astrojs/mdx": "^6.0.3",
     "@ocavue/eslint-config": "^4.5.8",
     "@ocavue/tsconfig": "^0.7.1",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
     "@tsdown/css": "^0.22.0",
     "@types/node": "^22.19.13",
-    "astro": "^6.3.7",
+    "astro": "^6.4.0",
     "astro-theme-toggle": "^0.8.1",
     "diffable-html-snapshot": "^0.2.0",
     "eslint": "^10.4.0",
