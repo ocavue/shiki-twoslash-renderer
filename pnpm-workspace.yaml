@@ -1,4 +1,8 @@
 allowBuilds:
   esbuild: false
   sharp: false
+
 ignoreWorkspaceRootCheck: true
+
+minimumReleaseAgeExclude:
+  - '@ocavue/eslint-config@4.7.2'
