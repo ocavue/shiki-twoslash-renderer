@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^6.0.3",
-    "@ocavue/eslint-config": "^4.7.2",
+    "@ocavue/eslint-config": "^4.9.1",
     "@ocavue/tsconfig": "^0.7.1",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
