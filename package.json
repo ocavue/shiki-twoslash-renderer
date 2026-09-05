@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.3.5",
   "private": false,
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@11.25.0",
   "description": "A Shiki renderer for Twoslash based on web components",
   "author": {
     "name": "ocavue",
@@ -46,31 +46,31 @@
   },
   "dependencies": {
     "@aria-ui/core": "^0.2.1",
-    "@aria-ui/elements": "^0.1.12",
-    "@shikijs/twoslash": "^4.4.2",
-    "@shikijs/types": "^4.4.2",
+    "@aria-ui/elements": "^0.1.13",
+    "@shikijs/twoslash": "^4.4.3",
+    "@shikijs/types": "^4.4.3",
     "@types/hast": "^3.0.5",
     "twoslash": "^0.3.9"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^7.0.5",
-    "@ocavue/eslint-config": "^4.13.1",
+    "@astrojs/mdx": "^7.0.8",
+    "@ocavue/eslint-config": "^4.16.1",
     "@ocavue/tsconfig": "^0.7.1",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
-    "@tsdown/css": "^0.22.9",
+    "@tsdown/css": "^0.23.0",
     "@types/node": "^22.19.13",
-    "astro": "^7.1.6",
-    "astro-theme-toggle": "^0.8.1",
+    "astro": "^7.3.1",
+    "astro-theme-toggle": "^0.8.2",
     "diffable-html-snapshot": "^0.3.0",
-    "eslint": "^10.7.0",
+    "eslint": "^10.10.0",
     "prettier": "^3.9.6",
-    "shiki": "^4.4.2",
+    "shiki": "^4.4.3",
     "tailwindcss": "^4.3.3",
-    "tsdown": "^0.22.9",
+    "tsdown": "^0.23.0",
     "typescript": "^6.0.3",
-    "vite": "^8.2.0",
-    "vitest": "^4.1.10"
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
   },
   "publishConfig": {
     "exports": {
